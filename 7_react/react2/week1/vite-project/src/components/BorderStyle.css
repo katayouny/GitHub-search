@@ -1,0 +1,11 @@
+.border-style {
+  border: 1px solid rgb(3, 0, 47);
+  padding-bottom: 7px;
+  padding-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 14px;
+  margin-left: 14px;
+  border-radius: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
