@@ -28,3 +28,5 @@ function UserSearchResult() {
 }
 
 export default UserSearchResult;
+
+/**/

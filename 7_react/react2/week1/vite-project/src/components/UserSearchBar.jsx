@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { userContext } from "./UserSection";
 
-function UserSearchBar () {
+function UserSearchBar() {
   const { query, setQuery } = useContext(userContext);
 
   return (
@@ -29,11 +29,8 @@ function UserSearchBar () {
         </form>
       </div>
       <br />
-
-
     </div>
   );
 }
 
 export default UserSearchBar;
-//

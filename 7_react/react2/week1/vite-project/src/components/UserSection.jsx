@@ -1,5 +1,5 @@
 import { useEffect, useState, createContext } from "react";
-import { useDebounce } from 'use-debounce';
+import { useDebounce } from "use-debounce";
 import UserSearchBar from "./UserSearchBar";
 import UserSearchResult from "./UserSearchResult";
 import "./BorderStyle.css";
@@ -13,7 +13,7 @@ function UserSection() {
   const [debouncedQuery] = useDebounce(query, 1000);
   const [loading, setLoading] = useState(true);
   const [searchResult, setSearchResult] = useState([]);
-  const [error, setError] =useState(null);
+  const [error, setError] = useState(null);
 
   async function fetchData() {
     try {
@@ -33,7 +33,6 @@ function UserSection() {
     }
   }
 
-
   useEffect(() => {
     fetchData();
   }, [debouncedQuery]);
@@ -42,9 +41,10 @@ function UserSection() {
     <div className="border-style">
       <h3>User Section</h3>
 
-      <userContext.Provider value={{ query, setQuery, loading, error, searchResult }}>
-        <div
-          className="border-style">
+      <userContext.Provider
+        value={{ query, setQuery, loading, error, searchResult }}
+      >
+        <div className="border-style">
           <UserSearchBar />
         </div>
 

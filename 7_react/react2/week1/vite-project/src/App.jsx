@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <h1>Github user searching</h1>
+      <h1>Github user search</h1>
       <br/>
 
       <div>
