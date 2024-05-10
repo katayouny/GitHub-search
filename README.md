@@ -1,2 +1,2 @@
 # GitHub-search
-Search for items from on provided API
+Search for items from a provided API
